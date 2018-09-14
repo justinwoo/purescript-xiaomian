@@ -1,0 +1,21 @@
+{
+  "name": "purescript-xiaomian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinwoo/purescript-xiaomian.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-naporitan": "^0.2.0"
+  },
+  "devDependencies": {
+    "purescript-console": "^4.1.0",
+    "purescript-expect-inferred": "^0.2.0"
+  }
+}
