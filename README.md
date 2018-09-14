@@ -8,6 +8,7 @@ Make a record of `SProxy` of keys of a row type easily, and just plug in the inf
 
 See [test/Main.purs](./test/Main.purs)
 
+```purs
 test :: Unit
 test = do
   let
@@ -28,3 +29,5 @@ test3 = do
     expected = Proxy :: Proxy ({ a :: SProxy "a", b :: SProxy "b", c :: SProxy "c" })
     actual = X.getKeysRecord' (Proxy :: Proxy { a :: Int, b :: Int, c :: Int })
   expectInferred expected actual
+```
+
