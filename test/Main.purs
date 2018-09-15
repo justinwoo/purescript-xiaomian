@@ -28,5 +28,12 @@ test3 = do
     actual = X.getKeysRecord' (Proxy :: Proxy { a :: Int, b :: Int, c :: Int })
   expectInferred expected actual
 
+keys ::
+  { a :: SProxy "a"
+  , b :: SProxy "b"
+  , c :: SProxy "c"
+  }
+keys = X.getKeysRecord' (Proxy :: Proxy { a :: Int, b :: Int, c :: Int })
+
 main :: Effect Unit
 main = pure unit
